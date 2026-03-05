@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cinema Black</title>
+  <meta name="description" content="Cinema Black — film, movement, and production." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <header class="topbar" id="top">
+    <div class="topbar__inner">
+      <a class="brand" href="#top" aria-label="Cinema Black Home">
+        <span class="dot"></span> CINEMA BLACK
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#work">WORK</a>
+        <a href="#reels">REELS</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact" class="nav__cta">BOOK</a>
+      </nav>
+
+      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">
+        Menu
+      </button>
+    </div>
+
+    <div class="mobileMenu" id="mobileMenu" hidden>
+      <a href="#work">WORK</a>
+      <a href="#reels">REELS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">BOOK</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero" aria-label="Hero section">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="hero__type" aria-hidden="true">
+        <div class="hero__word">CINEMA</div>
+        <div class="hero__word hero__word--offset">BLACK</div>
+      </div>
+
+      <div class="hero__mediaCard">
+        <img src="assets/hero.jpg" alt="Cinema Black hero portrait" />
+        <div class="hero__badge">
+          <div class="hero__badgeTitle">PRODUCER • DP • CHOREOGRAPHY</div>
+          <div class="hero__badgeSub">Story-first. Movement-driven. Built to deliver.</div>
+        </div>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#reels">Watch Reels</a>
+        <a class="btn btn--ghost" href="#contact">Book a Project</a>
+      </div>
+
+      <div class="hero__hint">Scroll</div>
+    </section>
+
+    <!-- WORK / FEATURED -->
+    <section class="section" id="work" aria-label="Featured work">
+      <div class="section__head">
+        <h2>Featured</h2>
+        <p class="section__sub">A quick hit of what you do best — visuals + proof.</p>
+      </div>
+
+      <div class="grid grid--featured">
+        <article class="card">
+          <div class="card__media">
+            <img src="assets/awards.jpg" alt="Awards / festival selections image" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <h3>Festival-Recognized Work</h3>
+            <p>Highlight your strongest credits, selections, and wins with one clean visual.</p>
+            <div class="card__tags">
+              <span>Film</span><span>DP</span><span>Producer</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="assets/stairs.jpg" alt="Lifestyle portrait on stairs" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <h3>Portraits + Brand Visuals</h3>
+            <p>Stylized photo + motion packages for artists, brands, and campaigns.</p>
+            <div class="card__tags">
+              <span>Brand</span><span>Photo</span><span>Social</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--wide">
+          <div class="card__media">
+            <img src="assets/gameday.jpg" alt="Game day promo graphic" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <h3>Sports Entertainment</h3>
+            <p>High-impact promo graphics and performance-driven storytelling.</p>
+            <div class="card__tags">
+              <span>Sports</span><span>Performance</span><span>Creative Direction</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- REELS -->
+    <section class="section" id="reels" aria-label="Video reels">
+      <div class="section__head">
+        <h2>Reels</h2>
+        <p class="section__sub">Tap to play. Built to look professional on desktop + mobile.</p>
+      </div>
+
+      <div class="grid grid--reels">
+        <figure class="reel">
+          <button class="reel__overlay" type="button" aria-label="Play Dance Reel">
+            <span class="reel__play">Play</span>
+          </button>
+          <video class="reel__video" preload="metadata" playsinline muted loop poster="assets/hero.jpg">
+            <source src="assets/dance-reel.mp4" type="video/mp4" />
+          </video>
+          <figcaption class="reel__cap">
+            <div class="reel__title">Dance Reel</div>
+            <div class="reel__meta">Choreo • Performance • Camera</div>
+          </figcaption>
+        </figure>
+
+        <figure class="reel">
+          <button class="reel__overlay" type="button" aria-label="Play Wedding Reel">
+            <span class="reel__play">Play</span>
+          </button>
+          <video class="reel__video" preload="metadata" playsinline muted loop poster="assets/stairs.jpg">
+            <source src="assets/wedding-reel.mp4" type="video/mp4" />
+          </video>
+          <figcaption class="reel__cap">
+            <div class="reel__title">Wedding / Live Event</div>
+            <div class="reel__meta">Coverage • Edit • Delivery</div>
+          </figcaption>
+        </figure>
+
+        <figure class="reel">
+          <button class="reel__overlay" type="button" aria-label="Play Reel 3">
+            <span class="reel__play">Play</span>
+          </button>
+          <video class="reel__video" preload="metadata" playsinline muted loop poster="assets/gameday.jpg">
+            <source src="assets/reel-3.mp4" type="video/mp4" />
+          </video>
+          <figcaption class="reel__cap">
+            <div class="reel__title">Reel 03</div>
+            <div class="reel__meta">Highlights • Social • Motion</div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="note">
+        <strong>Tip:</strong> Keep reels under ~30–60s for fastest load. Use H.264 MP4 for best compatibility.
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-label="About Cinema Black">
+      <div class="section__head">
+        <h2>About</h2>
+        <p class="section__sub">Say who you are, what you do, and why you’re different.</p>
+      </div>
+
+      <div class="about">
+        <div class="about__copy">
+          <h3>Story-first production rooted in movement.</h3>
+          <p>
+            Cinema Black is a hybrid creative studio built for performance, film, and branded storytelling.
+            I produce, shoot, and direct projects that feel cinematic, intentional, and alive.
+          </p>
+          <p>
+            If you’re an artist, brand, or organization that needs clean visuals with real emotional impact,
+            let’s build something that travels.
+          </p>
+
+          <div class="about__stats">
+            <div class="stat">
+              <div class="stat__num">Multi-Award</div>
+              <div class="stat__label">Recognized Work</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Full-Stack</div>
+              <div class="stat__label">Producer + DP</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Fast</div>
+              <div class="stat__label">Social Delivery</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__image">
+          <img src="assets/awards.jpg" alt="Awards image" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / BOOK -->
+    <section class="section" id="contact" aria-label="Contact and booking">
+      <div class="section__head">
+        <h2>Book</h2>
+        <p class="section__sub">Drop your email and project details. (This demo shows a success message.)</p>
+      </div>
+
+      <form class="form" id="contactForm">
+        <div class="form__row">
+          <label>
+            Name
+            <input name="name" type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" placeholder="you@email.com" required />
+          </label>
+        </div>
+
+        <label>
+          What are we making?
+          <textarea name="message" rows="5" placeholder="Project type, date, location, budget range, deliverables..." required></textarea>
+        </label>
+
+        <div class="form__actions">
+          <button class="btn btn--primary" type="submit">Send</button>
+          <a class="btn btn--ghost" href="#top">Back to top</a>
+        </div>
+
+        <div class="form__msg" id="formMsg" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>© <span id="year"></span> CINEMA BLACK. All Rights Reserved.</div>
+      <div class="footer__links">
+        <a href="#work">Work</a>
+        <a href="#reels">Reels</a>
+        <a href="#contact">Book</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
